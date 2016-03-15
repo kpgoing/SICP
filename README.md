@@ -1,1 +1,1 @@
-just somethings easy.
+just something easy.
