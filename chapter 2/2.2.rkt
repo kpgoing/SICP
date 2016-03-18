@@ -18,7 +18,7 @@
 (define (midpoint-segment segment)
   (let ((sp (start-segment segment))
        (ep (end-segment segment)))
-    (make-point (f-average start-segment sp ep) (f-average end-segment sp ep))))
+    (make-point (f-average x-point sp ep) (f-average y-point sp ep))))
 (define (print-point p)
   (newline)
   (display "(")
