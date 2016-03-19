@@ -1,0 +1,15 @@
+#lang racket
+(define (new-cons x y)
+  (* (expt 2 x)
+     (expt 3 y)))
+(define (compute z n)
+  (if (= 0 (remainder z n))
+      (+ 1 (compute (/ z n) n))
+      0))
+(define (new-car z)
+  (compute z 2))
+(define (new-cdr z)
+  (compute z 3))
+(define x (new-cons 4 2))
+x
+(new-car x)
